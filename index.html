@@ -1,33 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="container">
-    <h1>Tasks</h1>
-
-    <form id="task-form" novalidate>
-      <div class="input-row">
-        <input
-          id="task-input"
-          type="text"
-          placeholder="New task title…"
-          aria-label="Task title"
-          autocomplete="off"
-        />
-        <button type="submit">Add</button>
-      </div>
-      <p id="validation-error" class="error" role="alert" aria-live="polite"></p>
-    </form>
-
-    <ul id="task-list" aria-label="Task list"></ul>
-    <p id="empty-state" class="empty">No tasks yet.</p>
-  </main>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Transfer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
