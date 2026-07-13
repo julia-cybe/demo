@@ -35,7 +35,7 @@ function App() {
         <div className="success">
           <span className="success-icon">✓</span>
           <h1>Transfer submitted</h1>
-          <p>Your payment to <strong>{form.recipientName}</strong> for <strong>{form.amount} {form.currency}</strong> has been submitted successfully.</p>
+          <p>Your payment to <strong>{form.recipientName || 'N/A'}</strong> for <strong>{form.amount || 'N/A'} {form.currency}</strong> has been submitted successfully.</p>
           <button type="button" onClick={handleReset}>New transfer</button>
         </div>
       </main>
